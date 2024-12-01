@@ -5,12 +5,13 @@ with open("README.md", "r") as f:
 
 setup(
     name="admin_custom_filter",
-    version="1.0.0",
+    version="1.0.5",
     packages=find_packages(),
     include_package_data=True,
     package_data={'': ['templates/admin/*']},
     install_requires=[
-        'bleach>=6.2.0'
+        'django-bleach>=3.1.0',
+        'bleach>=5.0.1'
     ],
     long_description=readme,
     long_description_content_type="text/markdown",
@@ -18,5 +19,6 @@ setup(
     author_email="ab.ah.bq@gmail.com",
     maintainer="Abdulaziz Baqaleb",
     maintainer_email="ab.ah.bq@gmail.com",
-    license="MIT License"
+    license="MIT License",
+    url="https://github.com/i3z101/admin_custom_filter/tree/master"
 )

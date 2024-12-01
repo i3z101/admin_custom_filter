@@ -1,3 +1,6 @@
 .venv
 venv/
 .vscode
+build
+dist
+admin_custom_filter.egg-info
