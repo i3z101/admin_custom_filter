@@ -47,13 +47,16 @@ AUTH_USER_MODEL = "authentication.user"
 ```
 4. Run migration
 ```
+python manage.py makemigrations
 python manage.py migrate
 OR
+python3 manage.py makemigrations
 python3 manage.py migrate
 ```
-5. Add the custom filter class to the models you want as the parent class.
+5. Add the custom filter class to the models you want as the parent class inside admin.py file.
 ```
 Ex:
+from admin_custom_filter.admin_filter import AdminCustomFilter
 class Countries(AdminCustomFilter):
     pass
 ```
